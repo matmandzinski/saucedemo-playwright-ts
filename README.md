@@ -219,6 +219,8 @@ SauceDemo currently clears the cart after selecting **Reset App State**, but the
 
 The defect is covered by an executed `test.fail()` scenario tagged with `@known-issue`. If the application behavior is corrected, Playwright will report an unexpected pass, indicating that the expected-failure annotation should be removed.
 
+The defect is tracked in [GitHub issue #1](https://github.com/matmandzinski/saucedemo-playwright-ts/issues/1).
+
 ### Product sorting accessibility
 
 The product sorting select on the inventory page does not have an accessible name. Axe reports this as a critical `select-name` violation.
@@ -268,7 +270,7 @@ The GitHub Actions workflow runs on pushes and pull requests targeting the `main
 - [x] Run the complete E2E smoke flow in dedicated Chromium, Firefox, and WebKit projects
 - [x] Add an automated accessibility baseline with Axe Core
 - [x] Extend accessibility coverage to login, product details, cart, checkout, order completion, and sidebar states
-- [ ] Link known-issue tests to public issue tickets
+- [x] Link known-issue tests to public issue tickets
 
 ## Disclaimer
 
