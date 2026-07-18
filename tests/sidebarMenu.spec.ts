@@ -62,7 +62,7 @@ test.describe('Application sidebar menu tests', () => {
       annotation: {
         type: 'issue',
         description:
-          'SauceDemo clears the cart, but the product button remains in the Remove state.',
+          'https://github.com/matmandzinski/saucedemo-playwright-ts/issues/1',
       },
     },
     async () => {
