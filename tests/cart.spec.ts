@@ -104,4 +104,32 @@ test.describe('Cart page tests', () => {
     await expect(page).toHaveURL('/inventory.html');
     await expect(productsPage.inventoryList).toBeVisible();
   });
+
+  test.fail(
+    'user cannot start checkout with an empty cart',
+    {
+      tag: '@known-issue',
+      annotation: {
+        type: 'issue',
+        description: 'https://github.com/matmandzinski/saucedemo-playwright-ts/issues/2',
+      },
+    },
+    async ({ page }) => {
+      const productsPage = new ProductsPage(page);
+      const cartPage = new CartPage(page);
+      const header = new HeaderComponent(page);
+
+      await productsPage.open();
+      await header.cartLink.click();
+
+      await expect(page).toHaveURL('/cart.html');
+      await expect(cartPage.cartItems).toHaveCount(0);
+
+      await cartPage.checkoutButton.isVisible();
+
+      await cartPage.checkoutButton.click();
+
+      await expect(page).toHaveURL('/cart.html');
+    }
+  );
 });

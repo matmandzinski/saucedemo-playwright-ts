@@ -61,8 +61,7 @@ test.describe('Application sidebar menu tests', () => {
       tag: '@known-issue',
       annotation: {
         type: 'issue',
-        description:
-          'https://github.com/matmandzinski/saucedemo-playwright-ts/issues/1',
+        description: 'https://github.com/matmandzinski/saucedemo-playwright-ts/issues/1',
       },
     },
     async () => {
