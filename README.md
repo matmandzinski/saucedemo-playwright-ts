@@ -2,7 +2,7 @@
 
 End-to-end test automation project for [SauceDemo](https://www.saucedemo.com/), built with Playwright and TypeScript.
 
-The project demonstrates maintainable UI test architecture, reusable page and component objects, isolated authenticated sessions, parallel execution, CI integration, and automated coverage of the complete purchasing journey.
+The project demonstrates maintainable UI test architecture, reusable page and component objects, isolated authenticated sessions, parallel execution, cross-browser smoke testing, CI integration, and automated accessibility checks with Axe Core. It covers the complete purchasing journey from login to order confirmation.
 
 [![Playwright Tests](https://github.com/matmandzinski/saucedemo-playwright-ts/actions/workflows/playwright.yml/badge.svg)](https://github.com/matmandzinski/saucedemo-playwright-ts/actions/workflows/playwright.yml)
 
