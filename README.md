@@ -4,9 +4,7 @@ End-to-end test automation project for [SauceDemo](https://www.saucedemo.com/), 
 
 The project demonstrates maintainable UI test architecture, reusable page and component objects, isolated authenticated sessions, parallel execution, CI integration, and automated coverage of the complete purchasing journey.
 
-<!-- Add the GitHub Actions badge after publishing the repository:
-[![Playwright Tests](https://github.com/USERNAME/REPOSITORY/actions/workflows/playwright.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/playwright.yml)
--->
+[![Playwright Tests](https://github.com/matmandzinski/saucedemo-playwright-ts/actions/workflows/playwright.yml/badge.svg)](https://github.com/matmandzinski/saucedemo-playwright-ts/actions/workflows/playwright.yml)
 
 ## Key Features
 
